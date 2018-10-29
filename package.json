@@ -2,7 +2,6 @@
   "name": "snake",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wcolts2000.github.io/javascript_snake/",
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
