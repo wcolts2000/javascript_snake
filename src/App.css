@@ -1,32 +1,76 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/751676/pexels-photo-751676.jpeg?auto=compress&cs=tinysrgb&h=350);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+.gameOverGrid {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top right, rgb(1, 70, 22), rgb(0,0,0));
+  color: aqua;
+  font-size: 40px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-transform: uppercase;
+  text-shadow: -2px -2px 5px rgba(0,0,0,.8),
+               -3px -3px 5px rgba(0,0,0,.6),
+               -4px -4px 5px rgba(0,0,0,.4),
+               -5px -5px 5px rgba(0,0,0,.2),;
+}
+
+
+.grid {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background-color: rgba(178, 255, 154, 0.7);
+  box-shadow: -2px 2px 2px rgba(0,0,0,.6)
+}
+
+
+.cell {
+  width: 30px;
+  height: 30px;
+  outline: 1px solid rgb(3, 68, 1);
+  display: inline-block;
+}
+
+.apple {
+  background: red;
+  height: 26px;
+  width: 26px;
+  -webkit-clip-path: polygon(44% 6%, 39% 4%, 37% 2%, 32% 2%, 25% 4%, 18% 9%, 12% 15%, 7% 22%, 1% 32%, 0% 42%, 1% 50%, 6% 59%, 11% 72%, 18% 82%, 27% 92%, 31% 96%, 40% 97%, 45% 91%, 51% 93%, 57% 99%, 65% 100%, 78% 92%, 84% 85%, 90% 74%, 97% 60%, 100% 44%, 100% 31%, 99% 18%, 89% 8%, 84% 3%, 74% 0%, 63% 5%, 56% 11%, 51% 13%, 46% 9%);
+  clip-path: polygon(44% 6%, 39% 4%, 37% 2%, 32% 2%, 25% 4%, 18% 9%, 12% 15%, 7% 22%, 1% 32%, 0% 42%, 1% 50%, 6% 59%, 11% 72%, 18% 82%, 27% 92%, 31% 96%, 40% 97%, 45% 91%, 51% 93%, 57% 99%, 65% 100%, 78% 92%, 84% 85%, 90% 74%, 97% 60%, 100% 44%, 100% 31%, 99% 18%, 89% 8%, 84% 3%, 74% 0%, 63% 5%, 56% 11%, 51% 13%, 46% 9%);
+
+}
+
+.head {
+  background: #745604;
+}
+
+.tail {
+  background: #ca9b19;
 }
